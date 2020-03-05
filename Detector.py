@@ -1,6 +1,6 @@
 import cv2
 import glob
-classificador = "../classifier/cascade.xml"
+classificador = "cascade.xml"
 Cascade = cv2.CascadeClassifier(classificador)
 for x in glob.glob("4.jpeg"):
     image = cv2.imread(x)
